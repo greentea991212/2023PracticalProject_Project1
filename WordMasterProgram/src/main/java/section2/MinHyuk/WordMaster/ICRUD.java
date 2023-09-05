@@ -1,5 +1,5 @@
 package section2.MinHyuk.WordMaster;
-//CRUDë¥¼ ìœ„í•œ interface
+//CRUD¸¦ À§ÇÑ interface
 public interface ICRUD {
 
     public Object add();

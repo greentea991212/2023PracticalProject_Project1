@@ -1,13 +1,18 @@
 package section2.MinHyuk.WordMaster;
+import java.util.Scanner;
 
-//ë‹¨ì–´ì— ëŒ€í•œ ì •ë³´ë¥¼ êµ¬ì„±í•˜ê³  ìˆëŠ” í´ë˜ìŠ¤
+//´Ü¾î¿¡ ´ëÇÑ Á¤º¸¸¦ ±¸¼ºÇÏ°í ÀÖ´Â Å¬·¡½º
 public class Word {
 
     private int id;
     private int level;
     private String word;
+
+
+
     private String meaning;
 
+    Scanner s;
     Word(){}
     Word(int id, int level, String word, String meaning){
 
@@ -47,6 +52,15 @@ public class Word {
 
     public void setMeaning(String meaning) {
         this.meaning = meaning;
+    }
+
+    @Override
+    public String toString() {
+
+        String slevel = "";
+        for(int i = 0; i < level; i++) slevel = slevel + "*";
+        String str = String.format("%-3s",slevel) + String.format("%15s",word) + " " + meaning;
+        return super.toString();
     }
 
 }

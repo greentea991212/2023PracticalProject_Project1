@@ -1,10 +1,34 @@
 package section2.MinHyuk.WordMaster;
-//ICRUD interfaceì— ëŒ€í•œ ì‹¤ì§ˆì  êµ¬í˜„
+import java.util.ArrayList;
+import java.util.Scanner;
+
+//ICRUD interface¿¡ ´ëÇÑ ½ÇÁúÀû ±¸Çö
 public class WordCRUD implements ICRUD{
 
+    ArrayList<Word>list;
+    Scanner s;
+
+    WordCRUD(Scanner s){
+
+        list = new ArrayList<>();
+        this.s = s;
+    }
     @Override
     public Object add() {
-        return null;
+        System.out.print("=> ³­ÀÌµµ(1,2,3) & »õ ´Ü¾î ÀÔ·Â : ");
+        int level = s.nextInt();
+        String word = s.nextLine();
+
+        System.out.print("¶æ ÀÔ·Â : ");
+        String meaning = s.nextLine();
+
+        return new Word(0,level,word,meaning);
+    }
+
+    public void addWord(){
+
+        Word one = (Word)add();
+        list.add(one);
     }
 
     @Override
@@ -20,5 +44,14 @@ public class WordCRUD implements ICRUD{
     @Override
     public void selectOne(int id) {
 
+    }
+
+    public void listALl(){
+        System.out.println("-------------------------");
+        for(int i = 0; i < list.size(); i++){
+            System.out.print((i+1) + " ");
+            System.out.println(list.get(i).toString());
+        }
+        System.out.println("-------------------------");
     }
 }
