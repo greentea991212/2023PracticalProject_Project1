@@ -41,24 +41,28 @@ public class WordManager {
             }
             else if(menu == 2){
 
-                //List of level
+
             }
             else if(menu == 3){
 
-                //searching
+
             }
             else if(menu == 4){
 
-                wordCRUD.addWord();
+                wordCRUD.addItem();
+
             } else if(menu == 5){
 
-                //searching
+                wordCRUD.updateItem();
+
+
             } else if(menu == 6){
 
-                //searching
+                wordCRUD.deleteItem();
+
             } else if(menu == 7){
 
-                //searching
+
             }
         }
 

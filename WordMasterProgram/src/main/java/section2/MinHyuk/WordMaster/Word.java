@@ -1,7 +1,7 @@
 package section2.MinHyuk.WordMaster;
 import java.util.Scanner;
 
-//´Ü¾î¿¡ ´ëÇÑ Á¤º¸¸¦ ±¸¼ºÇÏ°í ÀÖ´Â Å¬·¡½º
+//ë‹¨ì–´ì— ëŒ€í•œ ì •ë³´ë¥¼ êµ¬ì„±í•˜ê³  ìˆëŠ” í´ë˜ìŠ¤
 public class Word {
 
     private int id;
@@ -60,7 +60,7 @@ public class Word {
         String slevel = "";
         for(int i = 0; i < level; i++) slevel = slevel + "*";
         String str = String.format("%-3s",slevel) + String.format("%15s",word) + " " + meaning;
-        return super.toString();
+        return str;
     }
 
 }
