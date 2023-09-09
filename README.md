@@ -8,4 +8,4 @@
 > * U (update) : 사용자가 등록되어진 영단어를 수정 할 수 있다.
 > * D (delete) : 사용자가 등록되어진 영단어를 삭제 할 수 있다.
 > C (create)</br>
-> <img></img>
+> <img width = "300px" height = "300px"></img>
