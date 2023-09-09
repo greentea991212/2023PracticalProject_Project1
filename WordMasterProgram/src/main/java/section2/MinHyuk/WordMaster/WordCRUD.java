@@ -50,11 +50,23 @@ public class WordCRUD implements ICRUD{
 
     public void listALl(){
         System.out.println("-------------------------");
-        for(int i = 0; i < list.size(); i++){
-            System.out.print((i+1) + " ");
-            System.out.println(list.get(i).toString());
+
+        if(list.size() == 0){
+
+            System.out.println("데이터가 존재하지 않습니다.");
+
         }
-        System.out.println("-------------------------");
+        else {
+
+            for(int i = 0; i < list.size(); i++){
+                System.out.print((i+1) + " ");
+                System.out.println(list.get(i).toString());
+            }
+            System.out.println("-------------------------");
+
+        }
+        System.out.println();
+        return ;
     }
 
     public LinkedList<Integer> listALl(String keyword){
@@ -71,6 +83,8 @@ public class WordCRUD implements ICRUD{
             count++;
         }
         System.out.println("-------------------------");
+        System.out.println();
+
         return idList;
     }
     public void updateItem() {
@@ -113,4 +127,8 @@ public class WordCRUD implements ICRUD{
         }
     }
 
+    public void exitProgram(){
+
+        System.out.println("프로그램이 종료되었습니다.");
+    }
 }
