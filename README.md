@@ -7,5 +7,9 @@
 > * R (read) : 등록되어진 모든 영단어를 출력할 수 있다.
 > * U (update) : 사용자가 등록되어진 영단어를 수정 할 수 있다.
 > * D (delete) : 사용자가 등록되어진 영단어를 삭제 할 수 있다.</br></br>
-> C (create)</br>
-> <img width = "300px" height = "300px" src="images/creat1.png"></img>
+> ## Create </br>
+> <img width = "300px" height = "300px" src="images/create1.png"></img>
+> <img width = "300px" height = "300px" src="images/create2.png"></img>
+> <img width = "300px" height = "300px" src="images/create3.png"></img> </br>
+> ## Read </br>
+> <img width = "300px" height = "300px" src="images/read1.png"></img>
