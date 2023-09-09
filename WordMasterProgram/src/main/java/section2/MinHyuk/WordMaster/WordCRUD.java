@@ -1,17 +1,18 @@
 package section2.MinHyuk.WordMaster;
+import java.io.*;
 import java.sql.Array;
-import java.util.ArrayList;
-import java.util.Scanner;
 
-//ICRUD interface에 대한 실질적 구현
+import java.util.Scanner;
+import java.util.LinkedList;
+
 public class WordCRUD implements ICRUD{
 
-    ArrayList<Word>list;
+    LinkedList<Word>list;
     Scanner s;
-
+    final String fileName = "Dictionary.txt";
     WordCRUD(Scanner s){
 
-        list = new ArrayList<>();
+        list = new LinkedList<>();
         this.s = s;
     }
     @Override
@@ -56,9 +57,9 @@ public class WordCRUD implements ICRUD{
         System.out.println("-------------------------");
     }
 
-    public ArrayList<Integer> listALl(String keyword){
+    public LinkedList<Integer> listALl(String keyword){
 
-        ArrayList<Integer> idList = new ArrayList<>();
+        LinkedList<Integer> idList = new LinkedList<>();
         int count = 0;
         System.out.println("-------------------------");
         for(int i = 0; i < list.size(); i++){
@@ -76,7 +77,7 @@ public class WordCRUD implements ICRUD{
 
         System.out.print("=> 수정할 단어 검색 : ");
         String keyword = s.next();
-        ArrayList<Integer> idList = this.listALl(keyword);
+        LinkedList<Integer> idList = this.listALl(keyword);
         System.out.print("수정할 번호 선택 : ");
         int id = s.nextInt();
 
@@ -93,7 +94,7 @@ public class WordCRUD implements ICRUD{
 
         System.out.print("=> 삭제할 단어 검색 : ");
         String keyword = s.next();
-        ArrayList<Integer> idList = this.listALl(keyword);
+        LinkedList<Integer> idList = this.listALl(keyword);
         System.out.print("=> 삭제할 번호 선택 : ");
         int id = s.nextInt();
 
@@ -111,4 +112,5 @@ public class WordCRUD implements ICRUD{
             System.out.println("취소 되었습니다.");
         }
     }
+
 }
