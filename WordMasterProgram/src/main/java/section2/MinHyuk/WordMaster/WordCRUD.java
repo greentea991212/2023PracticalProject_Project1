@@ -134,10 +134,6 @@ public class WordCRUD implements ICRUD{
     }
     public void loadFile(){
 
-
-    }
-
-    public void saveFile(){
         try{
             BufferedReader br = new BufferedReader(new FileReader(fileName));
             String line;
@@ -159,6 +155,10 @@ public class WordCRUD implements ICRUD{
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void saveFile(){
+
     }
     public void exitProgram(){
 
