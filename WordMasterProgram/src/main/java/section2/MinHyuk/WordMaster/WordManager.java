@@ -31,36 +31,30 @@ public class WordManager {
     }
     public void start(){
 
+        wordCRUD.loadFile();
         while(true){
 
             selectMenu();
-            if(menu == 0)break;
-            if(menu == 1) {
+            if(menu == 0) {
 
-                wordCRUD.listALl();
+                wordCRUD.exitProgram();
+                break;
             }
+            if(menu == 1) wordCRUD.listALl();
+
             else if(menu == 2){
 
 
             }
-            else if(menu == 3){
+            else if(menu == 3) wordCRUD.searchItem();
 
+            else if(menu == 4) wordCRUD.addItem();
 
-            }
-            else if(menu == 4){
+            else if(menu == 5) wordCRUD.updateItem();
 
-                wordCRUD.addItem();
+            else if(menu == 6) wordCRUD.deleteItem();
 
-            } else if(menu == 5){
-
-                wordCRUD.updateItem();
-
-
-            } else if(menu == 6){
-
-                wordCRUD.deleteItem();
-
-            } else if(menu == 7){
+            else if(menu == 7){
 
 
             }

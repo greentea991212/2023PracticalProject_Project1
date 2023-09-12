@@ -1,9 +1,8 @@
 package section2.MinHyuk.WordMaster;
 import java.io.*;
-import java.sql.Array;
-
 import java.util.Scanner;
 import java.util.LinkedList;
+import java.io.FileReader;
 
 public class WordCRUD implements ICRUD{
 
@@ -127,8 +126,42 @@ public class WordCRUD implements ICRUD{
         }
     }
 
+    public void searchItem(){
+
+        System.out.print("=> 검색할 단어 입력 : ");
+        String keyword = s.next();
+        LinkedList<Integer> idList = this.listALl(keyword);
+    }
+    public void loadFile(){
+
+
+    }
+
+    public void saveFile(){
+        try{
+            BufferedReader br = new BufferedReader(new FileReader(fileName));
+            String line;
+            int count = 0;
+            while(true){
+                line = br.readLine();
+                if(line == null) break;
+                String data[] = line.split("\\|");
+                int level = Integer.parseInt(data[0]);
+                String word = data[1];
+                String meaning = data[2];
+                list.add(new Word(0, level, word, meaning));
+                count++;
+            }
+            System.out.println("==> " + count + "개 로딩 완료!");
+            br.close();
+        }catch(FileNotFoundException e){
+            e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
     public void exitProgram(){
 
-        System.out.println("프로그램이 종료되었습니다.");
+        System.out.println("프로그램 종료! 다음에 만나요~");
     }
 }
