@@ -51,20 +51,16 @@ public class WordCRUD implements ICRUD{
     public void listALl(){
         System.out.println("-------------------------");
 
-        if(list.size() == 0){
+        if(isEmptyData()){
 
-            System.out.println("데이터가 존재하지 않습니다.");
-
+            System.out.println("데이터가 존재하지 않습니다.\n");
+            return ;
         }
-        else {
-
-            for(int i = 0; i < list.size(); i++){
-                System.out.print((i+1) + " ");
-                System.out.println(list.get(i).toString());
-            }
-            System.out.println("-------------------------");
-
+        for(int i = 0; i < list.size(); i++){
+            System.out.print((i+1) + " ");
+            System.out.println(list.get(i).toString());
         }
+        System.out.println("-------------------------");
         System.out.println();
         return ;
     }
@@ -106,6 +102,13 @@ public class WordCRUD implements ICRUD{
 
     public void updateItem() {
 
+        if(isEmptyData()){
+
+            System.out.println("데이터가 존재하지 않습니다.\n");
+            return ;
+        }
+
+
         System.out.print("=> 수정할 단어 검색 : ");
         String keyword = s.next();
         LinkedList<Integer> idList = this.listALl(keyword);
@@ -122,6 +125,12 @@ public class WordCRUD implements ICRUD{
     }
 
     public void deleteItem() {
+
+        if(isEmptyData()){
+
+            System.out.println("데이터가 존재하지 않습니다.\n");
+            return ;
+        }
 
         System.out.print("=> 삭제할 단어 검색 : ");
         String keyword = s.next();
@@ -145,6 +154,12 @@ public class WordCRUD implements ICRUD{
     }
 
     public void searchItem(){
+
+        if(isEmptyData()){
+
+            System.out.println("데이터가 존재하지 않습니다.\n");
+            return ;
+        }
 
         System.out.print("=> 검색할 단어 입력 : ");
         String keyword = s.next();
@@ -192,19 +207,37 @@ public class WordCRUD implements ICRUD{
 
     public void searchLevel(){
 
+        if(isEmptyData()){
+
+            System.out.println("데이터가 존재하지 않습니다.\n");
+            return ;
+        }
         System.out.print("=> 원하는 레벨은 (1 ~ 3)");
         int level = s.nextInt();
         listALl(level);
     }
 
     public void searchWord(){
+        if(isEmptyData()){
 
+            System.out.println("데이터가 존재하지 않습니다.\n");
+            return ;
+        }
         System.out.print("=> 원하는 단어는?");
         String keyword = s.next();
         listALl(keyword);
     }
+
+    public boolean isEmptyData(){
+
+        if(list.size() == 0){
+
+            return true;
+        }
+        else return false;
+    }
     public void exitProgram(){
 
-        System.out.println("프로그램 종료! 다음에 만나요~");
+        System.out.println("프로그램 종료! 다음에 만나요~\n");
     }
 }
