@@ -15,6 +15,6 @@
 > <img width = "300px" height = "300px" src="images/read1.png"></img>
 > ## Udate </br>
 > <img width = "300px" height = "300px" src="images/update1_1.png"></img>
-> <img width = "300px" height = "300px" src="images/update1_2.png"></img>
+> <img width = "300px" height = "300px" src="images/update1_2.png"></img> </br>
 > <img width = "300px" height = "300px" src="images/update2_1.png"></img>
 <img width = "300px" height = "300px" src="images/update2_2.png"></img>
