@@ -1,0 +1,22 @@
+1|giraffe|기린
+2|effect|결과
+1|sad|슬픈
+1|angry|화난
+1|earth|지구,땅
+2|row|줄,열
+1|route|길
+2|gift|선물
+1|army|군대
+2|master|정복하다
+1|tall|키가 큰
+2|advice|충고
+2|mine|마음
+1|voice|목소리
+1|birth|출생
+2|laundry|세탁소
+3|riddle|수수께끼
+2|feather|깃털
+2|poet|시인
+2|semester|학기
+3|inning|회
+2|scar|상처
