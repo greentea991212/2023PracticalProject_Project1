@@ -8,21 +8,21 @@
 > * U (update) : 사용자가 등록되어진 영단어를 수정 할 수 있다.
 > * D (delete) : 사용자가 등록되어진 영단어를 삭제 할 수 있다.</br></br></br>
 > ## Create </br>
-> <img width = "300px" height = "300px" src="images/create1.png"></img>
-> <img width = "300px" height = "300px" src="images/create2.png"></img>
-> <img width = "300px" height = "300px" src="images/create3.png"></img> </br>
+> <img width = "300px" height = "300px" src="screenshots/create1.png"></img>
+> <img width = "300px" height = "300px" src="screenshots/create2.png"></img>
+> <img width = "300px" height = "300px" src="screenshots/create3.png"></img> </br>
 > ## Read </br>
-> * 모든 단어 보기</br> <img width = "300px" height = "300px" src="images/read1.png"></img>
-> * 수준별 단어 보기 </br> <img width = "300px" height = "300px" src="images/level1.png"></img> <img width = "300px" height = "300px" src="images/level2.png"></img> <img width = "300px" height = "300px" src="images/level3.png"></img>
+> * 모든 단어 보기</br> <img width = "300px" height = "300px" src="screenshots/read1.png"></img>
+> * 수준별 단어 보기 </br> <img width = "300px" height = "300px" src="screenshots/level1.png"></img> <img width = "300px" height = "300px" src="screenshots/level2.png"></img> <img width = "300px" height = "300px" src="screenshots/level3.png"></img>
 > ## Udate </br>
-> <img width = "300px" height = "300px" src="images/update1_1.png"></img>
-> <img width = "300px" height = "300px" src="images/update1_2.png"></img> </br>
-> <img width = "300px" height = "300px" src="images/update2_1.png"></img>
-> <img width = "300px" height = "300px" src="images/update2_2.png"></img>
+> <img width = "300px" height = "300px" src="screenshots/update1_1.png"></img>
+> <img width = "300px" height = "300px" src="screenshots/update1_2.png"></img> </br>
+> <img width = "300px" height = "300px" src="screenshots/update2_1.png"></img>
+> <img width = "300px" height = "300px" src="screenshots/update2_2.png"></img>
 > ## Delete </br>
-> * Before </br> <img width = "300px" height = "300px" src="images/delete_before.png"></img>
-> * Delete : principle 삭제 </br> <img width = "300px" height = "300px" src="images/delete1.png"></img>
-> * After </br> <img width = "300px" height = "300px" src="images/delete_after.png"></img>
+> * Before </br> <img width = "300px" height = "300px" src="screenshots/delete_before.png"></img>
+> * Delete : principle 삭제 </br> <img width = "300px" height = "300px" src="screenshots/delete1.png"></img>
+> * After </br> <img width = "300px" height = "300px" src="screenshots/delete_after.png"></img>
 
 </br>
 
@@ -36,19 +36,19 @@
 >
 >
 > ### 단어 검색
-> <img width = "300px" height = "300px" src="images/level1.png"></img> <img width = "300px" height = "300px" src="images/level2.png"></img> <img width = "300px" height = "300px" src="images/level3.png"></img> </br>
+> <img width = "300px" height = "300px" src="screenshots/level1.png"></img> <img width = "300px" height = "300px" src="screenshots/level2.png"></img> <img width = "300px" height = "300px" src="screenshots/level3.png"></img> </br>
 > ##
 > </br>
 > 
 > ### 파일 저장
-> <img width = "300px" height = "100px" src="images/save1.png"></img> </br>
+> <img width = "300px" height = "100px" src="screenshots/save1.png"></img> </br>
 > #### Dictionary.txt에 저장된 모습
-> <img width = "300px" height = "500px" src="images/save2.png"></img>
+> <img width = "300px" height = "500px" src="screenshots/save2.png"></img>
 > ##
 > </br>
 >
 > ### 파일 읽기
-> <img width = "300px" height = "100px" src="images/load.png"></img>
+> <img width = "300px" height = "100px" src="screenshots/load.png"></img>
 > #### Dictionary.txt에 저장했던 22개의 단어를 불러온 모습
-> <img width = "300px" height = "500px" src="images/load2.png"></img>
+> <img width = "300px" height = "500px" src="screenshots/load2.png"></img>
 
